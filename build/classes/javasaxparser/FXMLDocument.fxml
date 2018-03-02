@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javasaxparser.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="27.0" layoutY="525.0" onAction="#chooseFile" text="Choose a File" />
+        <Label fx:id="fileLabel" layoutX="144.0" layoutY="525.0" minHeight="16" minWidth="69" prefHeight="27.0" prefWidth="184.0" text="No File Chosen" />
+      <MenuBar prefHeight="29.0" prefWidth="575.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox fx:id="domContainer" layoutX="28.0" layoutY="61.0" prefHeight="414.0" prefWidth="514.0" />
+    </children>
+</AnchorPane>
